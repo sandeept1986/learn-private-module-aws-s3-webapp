@@ -12,9 +12,9 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "bucket" {
-  bucket = "${var.prefix}-${var.name}"
+  bucket = "robin-test-dec-17-2022"
 
-  force_destroy = true
+  force_destroy = false
 }
 
 resource "aws_s3_bucket_website_configuration" "bucket" {
